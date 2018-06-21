@@ -419,7 +419,7 @@ section .item .rodzaj {
 }
 
 section .item .cena {
-    margin-left: 0.5em;
+margin-left: 0.5em;
     float: left;
     text-align: left;
     font-size: 1.5em;
@@ -471,7 +471,7 @@ section .item .cena {
     color: #434343;
     font-size: 1.3em;
     letter-spacing: 1px;
-    padding: 5px 1em;
+    padding: 1em;
     font-weight: 300;
     text-decoration: none;
     -webkit-transition: color .3s linear;
@@ -479,6 +479,11 @@ section .item .cena {
     -ms-transition: color .3s linear;
     -o-transition: color .3s linear;
     transition: color .3s linear;
+}
+
+.kontakt .star {
+    padding: 1em .5em ;
+    color: #6cbf6d;
 }
 
 .kontakt a:hover, .kontakt a:focus {
@@ -525,11 +530,11 @@ section .item .cena {
 
 @media screen and (min-width: 1126px) {
     section .online {
-        display: inline-block;
-        /*flex-direction: column;*/
-        /*text-align: left;*/
-        /*width: 35%;*/
-        /*margin: auto;*/
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 80%;
+        margin: auto;
     }
 
 }
@@ -539,7 +544,7 @@ section .item .cena {
         display: flex;
         flex-direction: column;
         text-align: left;
-        width: 35%;
+        width: 50%;
         margin: auto;
     }
     .last-star {
@@ -637,6 +642,11 @@ section .item .cena {
     section .item .cena {
         font-size: 1.4em;
     }
+
+    section .kontakt-section {
+        width: 100%;
+        justify-content: left;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -653,6 +663,10 @@ section .item .cena {
     section .item .cena {
         font-size: 1.2em;
     }
+
+
+
+
 }
 
 .footer {

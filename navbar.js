@@ -9,6 +9,4 @@ function myFunction() {
 
 $(".menu").click(function(){
     $(".navbar-content").removeClass("responsive");
-});/**
- * Created by Wundawaffę on 2018-06-20.
- */
+});
