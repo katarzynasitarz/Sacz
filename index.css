@@ -429,7 +429,7 @@ section .content-title {
     letter-spacing: 2px;
     padding: 5px 1em;
     font-weight: 400;
-    border-right: 3px solid #6cbf6d;
+    border-right: 3px solid #62a463;
 }
 
 .content-title img {
@@ -447,7 +447,7 @@ section .content-title-right {
     letter-spacing: 2px;
     padding: 5px 1em;
     font-weight: 400;
-    border-left: 3px solid #6cbf6d;
+    border-left: 3px solid #62a463;
 }
 
 section .content-text {
@@ -473,7 +473,7 @@ section .content-text-left {
 section .item {
     width: 100%;
     margin: 1em auto;
-    border-left: 2px solid #6cbf6d;
+    border-left: 2px solid #62a463;
 }
 
 section .item .rodzaj {
@@ -507,7 +507,7 @@ margin-left: 0.5em;
 .kontakt .kontakt-item {
     width: 40%;
     margin: 2em 1em;
-    border-left: 1px solid #6cbf6d;;
+    border-left: 1px solid #62a463;
 }
 
 .kontakt .kontakt-item-full {
@@ -517,7 +517,7 @@ margin-left: 0.5em;
 
 .kontakt h2 {
     padding-bottom: .5em;
-    border-bottom: 1px solid #6cbf6d;
+    border-bottom: 1px solid #62a463;
     font-weight: 500;
 }
 
@@ -549,7 +549,7 @@ margin-left: 0.5em;
 
 .kontakt .star {
     padding: 1em .5em ;
-    color: #6cbf6d;
+    color: #62a463;
 }
 
 .kontakt a:hover, .kontakt a:focus {
@@ -584,6 +584,65 @@ margin-left: 0.5em;
     padding: 1% 0;
     font-weight: 400;
     background: rgba(0, 0, 0, 0.5);
+}
+
+.faq {
+    margin-top: 70px;
+    padding: 5% 0;
+    width: 100%;
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.faq h1 {
+    color: #f1f1f1;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top: 50%;
+    padding: 2% 0;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.faq-item {
+    margin: 1.5em;
+}
+
+.faq-item a {
+    color: #62a463;
+    text-decoration: none;
+}
+
+.faq-item a:hover, .faq-item a:focus {
+    color: #0FA421;
+    text-decoration: underline;
+}
+
+.question {
+    margin: 1em 0.5em .5em .5em;
+    text-align: left;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    list-style: none;
+}
+
+.question:before {
+    content: "\274B";
+    margin-right: .5em;
+    color: #62a463;
+}
+
+.answer {
+    margin: 0 2em;
+    text-align: left;
+    font-size: 1.3em;
+    padding-left: 5px;
+    font-weight: 300;
+    border-left: 2px solid #62a463;
 }
 
 
