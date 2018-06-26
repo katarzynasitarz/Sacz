@@ -11,6 +11,11 @@ body {
     height: 100%
 }
 
+@media screen and (max-width: 600px) {
+    body {font-size: 10px}
+
+}
+
 .container {
     width: 100%;
     margin:0;
@@ -264,12 +269,12 @@ body {
 
 @media screen and (max-width: 1070px) {
     .header .img-text h1 {
-        font-size: 2.5em;
+        font-size: 2.6em;
         letter-spacing: 1px;
     }
 
     .header .img-text h2 {
-        font-size: 2.6em;
+        font-size: 2.7em;
         letter-spacing: 1px;
     }
     .header .img-text h3 {
@@ -277,7 +282,7 @@ body {
         letter-spacing: 1px;
     }
     .header .btn {
-        font-size: 1.2em;
+        font-size: 1.3em;
         letter-spacing: 1px;
         padding: 8px;
     }
@@ -297,12 +302,12 @@ body {
     }
 
     .header .img-text h1 {
-        font-size: 2em;
+        font-size: 2.2em;
         letter-spacing: 1px;
         padding: 0;
     }
     .header .img-text h2 {
-        font-size: 1.8em;
+        font-size: 2em;
         letter-spacing: 1px;
     }
 
@@ -311,7 +316,7 @@ body {
         letter-spacing: 1px;
     }
     .header .btn {
-        font-size: 1.1em;
+        font-size: 1.2em;
         letter-spacing: 1px;
         padding: 8px;
         margin: 0;
@@ -334,12 +339,12 @@ body {
 
 
     .header .img-text h1 {
-        font-size: 1.5em;
+        font-size: 1.6em;
         letter-spacing: 1px;
         padding: 0;
     }
     .header .img-text h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
         letter-spacing: 1px;
     }
 
@@ -348,7 +353,7 @@ body {
         letter-spacing: 1px;
     }
     .header .btn {
-        font-size: 1em;
+        font-size: 1.1em;
         letter-spacing: 1px;
         padding: 8px;
         margin: 0;
@@ -615,7 +620,7 @@ section .item .nowaCena {
 }
 
 .faq-item {
-    margin: 1.5em;
+    margin: .5em;
 }
 
 .faq-item a {
@@ -629,7 +634,7 @@ section .item .nowaCena {
 }
 
 .question {
-    margin: 1em 0.5em .5em .5em;
+    margin: 1em .5em .5em .5em;
     text-align: left;
     font-size: 1.5em;
     letter-spacing: 1px;
@@ -644,7 +649,7 @@ section .item .nowaCena {
 }
 
 .answer {
-    margin: 0 2em;
+    margin: 0 .4em;
     text-align: left;
     font-size: 1.3em;
     padding-left: 5px;
@@ -737,7 +742,7 @@ section .item .nowaCena {
         margin: 1em auto;
     }
     .kontakt .kontakt-item {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -748,7 +753,7 @@ section .item .nowaCena {
         letter-spacing: 1px;}
 
     section .content-text-left {
-        width: 80%;
+        width: 90%;
         font-size: 1.3em;
         order: 1;
     }
@@ -761,7 +766,7 @@ section .item .nowaCena {
     }
 
     section .content-text {
-        width: 80%;
+        width: 90%;
         font-size: 1.3em;
     }
 
@@ -808,7 +813,7 @@ section .item .nowaCena {
 }
 
 .footer .footer-text {
-    width: 40%;
+    width: 70%;
     margin: 1em auto;
     text-align: left;
     font-size: 1.2em;
