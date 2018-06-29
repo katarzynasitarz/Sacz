@@ -648,6 +648,11 @@ section .item .nowaCena {
     font-weight: 400;
 }
 
+.online .online-link:hover {
+    color: #62a463;
+    text-decoration: none;
+}
+
 .kontakt-item h4 {
     padding: 0.5em;
     font-size: 1.3em;
@@ -782,14 +787,13 @@ section .item .nowaCena {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1390px) {
     .kontakt-item-full .online {
         display: flex;
         flex-direction: column;
         text-align: left;
         width: 80%;
-        margin: auto;
-    }
+           }
     .last-star {
         display: none;
     }
@@ -1008,3 +1012,29 @@ letter-spacing: 2px;
     border-top: 3px solid #6cbf6d;
     text-align: center;
 }
+
+/* Cookie warning */
+#cookie-warn{
+    position: fixed;
+    bottom: 0;
+    background: #EEE;
+    margin: 0;
+    padding: 15px;
+    display: none;
+    z-index: 99;
+    border-top: 1px solid #6cbf6d;
+}
+
+#cookie-warn a{
+    color: #62a463;
+    text-transform: uppercase;
+    float: right;
+    padding: 10px 20px ;
+    text-decoration: none;
+}
+
+#cookie-warn a:hover {
+    text-decoration: underline;
+}
+
+
