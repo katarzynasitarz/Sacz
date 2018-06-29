@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <title>PSYCHOLOGICZNE S.O.S. | Gabinet psychologiczny | Aleksandra Kraszczyńska</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- navbar -->
+
+    <div class="navbar">
+
+        <div class="logo">
+            <a class="menu" href="http://gabinet-sacza.apopiel.webd.pl"><img src="./img/logo.jpg"></a>
+        </div>
+
+        <div class="navbar-content" id="myNavbar">
+
+            <a class="link menu" href="http://gabinet-sacza.apopiel.webd.pl">strona główna</a>
+            <a class="link menu" href="http://gabinet-sacza.apopiel.webd.pl/#o_mnie">o mnie</a>
+            <a class="link menu" href="http://gabinet-sacza.apopiel.webd.pl/#zakres_pomocy">zakres pomocy</a>
+            <a class="link menu" href="http://gabinet-sacza.apopiel.webd.pl/#rodzaje_pomocy">rodzaje pomocy</a>
+            <a class="link menu" href="http://gabinet-sacza.apopiel.webd.pl/#lgbt">LGBT+</a>
+            <a class="link menu" href="http://gabinet-sacza.apopiel.webd.pl/faq.html">faq</a>
+            <a class="link menu" href="http://gabinet-sacza.apopiel.webd.pl/#cennik">cennik</a>
+            <a class="link menu" href="http://gabinet-sacza.apopiel.webd.pl/#kontakt">kontakt</a>
+            <a class="link menu" href="http://gabinet-sacza.apopiel.webd.pl/sos.html">S.O.S.</a>
+        </div>
+        <div class="icon">
+            <a class="link icon" id="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+    </div>
+
+    <!-- koniec navbaru -->
+
+    <!-- content -->
+
+    <div class="content">
+
+        <div class="privacy">
+            <h1>PSYCHOLOGICZNE S.O.S.</h1>
+        </div>
+
+        <section>
+            <div class="sos-title">
+                online
+            </div>
+            <div class="sos-text">
+                <div class="sos-item">
+                    <h4>spotkanie online | 50 minut</h4><br>
+                    <h5><span class="sos-star">&#x274B;</span>45 zł</h5>
+                    <div>
+                        <button class="sos-button" id="kup1"
+                                onclick="document.getElementById('form1').style.display === 'block' ? document.getElementById('form1').style.display = 'none' : document.getElementById('form1').style.display = 'block';">
+                            zamów
+                        </button>
+                    </div>
+
+                    <div class="sos-form" id="form1" style="display: none">
+                        <p><span class="sos-star">&#x274B;</span>TAK, zgadzam się na przetwarzanie moich danych
+                            osobowych podanych w formularzu przez Gabinet Psychologiczny jako administratora danych
+                            osobowych,
+                            w celach kontaktowych oraz świadczenia na moją rzecz przez Gabinet Psychologiczny usług,
+                            zgodnie z bezwzględnie obowiązującymi przepisami prawa. Jestem świadoma/świadomy,
+                            że podanie ww. danych jest dobrowolne oraz że mam prawo dostępu do swoich danych, ich
+                            poprawiania, a także wycofania udzielonej zgody w dowolnym momencie.</p>
+                        <p><span class="sos-star">&#x274B;</span>TAK, akceptuję <a
+                                href="http://gabinet-sacza.apopiel.webd.pl">regulamin serwisu</a>.</p>
+                        <label class="sos-check"><input type="checkbox" name="nazwa" value="wartość" autocomplete="off"
+                                                        onclick="document.getElementById('zgoda1').style.display = this.checked ? 'block' : 'none'; this.form.elements['plac1'].disabled = !this.checked">Zgadzam
+                            się.</label>
+                        <div id="zgoda1" style="display: none">
+                            <br><br>
+                            <a class="sos-pay"
+                               href="https://sklep.przelewy24.pl/zakup.php?z24_id_sprzedawcy=76363&z24_kwota=4500&z24_currency=pln&z24_nazwa=spotkanie+online&z24_opis=50+minut&z24_return_url=http%3A%2F%2Fgabinet-sacza.apopiel.webd.pl&z24_language=pl&k24_kraj=PL&z24_crc=5a4796d5"
+                               id="plac1" disabled="disabled">zapłać</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sos-item">
+                    <h4>spotkanie diagnostyczne online z użyciem testu SCID | 90 minut</h4>
+                    <h5><span class="sos-star">&#x274B;</span>80 zł</h5>
+                    <div>
+                        <button class="sos-button" id="kup2"
+                                onclick="document.getElementById('form2').style.display === 'block' ? document.getElementById('form2').style.display = 'none' : document.getElementById('form2').style.display = 'block';">
+                            zamów
+                        </button>
+                    </div>
+
+                    <div class="sos-form" id="form2" style="display: none">
+                        <p><span class="sos-star">&#x274B;</span>TAK, zgadzam się na przetwarzanie moich danych
+                            osobowych podanych w formularzu przez Gabinet Psychologiczny jako administratora danych
+                            osobowych,
+                            w celach kontaktowych oraz świadczenia na moją rzecz przez Gabinet Psychologiczny usług,
+                            zgodnie z bezwzględnie obowiązującymi przepisami prawa. Jestem świadoma/świadomy,
+                            że podanie ww. danych jest dobrowolne oraz że mam prawo dostępu do swoich danych, ich
+                            poprawiania, a także wycofania udzielonej zgody w dowolnym momencie.</p>
+                        <p><span class="sos-star">&#x274B;</span>TAK, akceptuję <a
+                                href="http://gabinet-sacza.apopiel.webd.pl">regulamin serwisu</a>.</p>
+                        <label class="sos-check"><input type="checkbox" name="nazwa" value="wartość" autocomplete="off"
+                                                        onclick="document.getElementById('zgoda2').style.display = this.checked ? 'block' : 'none'; this.form.elements['plac2'].disabled = !this.checked">Zgadzam
+                            się.</label>
+                        <div id="zgoda2" style="display: none">
+                            <br><br>
+                            <a class="sos-pay"
+                               href="https://sklep.przelewy24.pl/zakup.php?z24_id_sprzedawcy=76363&z24_kwota=8000&z24_currency=pln&z24_nazwa=spotkanie+diagnostyczne+online+z+u%BFyciem+testu+SCID&z24_opis=90+minut&z24_return_url=http%3A%2F%2Fgabinet-sacza.apopiel.webd.pl&z24_language=pl&k24_kraj=PL&z24_crc=5a4796d5"
+                               id="plac2" disabled="disabled">zapłać</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="sos-title">
+                gabinet
+            </div>
+            <div class="sos-text">
+                <div class="sos-item">
+                    <h4>spotkanie w gabinecie | 50 minut</h4><br>
+                    <h5><span class="sos-star">&#x274B;</span>65 zł</h5>
+                    <div>
+                        <button class="sos-button" id="kup3"
+                                onclick="document.getElementById('form3').style.display === 'block' ? document.getElementById('form3').style.display = 'none' : document.getElementById('form3').style.display = 'block';">
+                            zamów
+                        </button>
+                    </div>
+
+                    <div class="sos-form" id="form3" style="display: none">
+                        <p><span class="sos-star">&#x274B;</span>TAK, zgadzam się na przetwarzanie moich danych
+                            osobowych podanych w formularzu przez Gabinet Psychologiczny jako administratora danych
+                            osobowych,
+                            w celach kontaktowych oraz świadczenia na moją rzecz przez Gabinet Psychologiczny usług,
+                            zgodnie z bezwzględnie obowiązującymi przepisami prawa. Jestem świadoma/świadomy,
+                            że podanie ww. danych jest dobrowolne oraz że mam prawo dostępu do swoich danych, ich
+                            poprawiania, a także wycofania udzielonej zgody w dowolnym momencie.</p>
+                        <p><span class="sos-star">&#x274B;</span>TAK, akceptuję <a
+                                href="http://gabinet-sacza.apopiel.webd.pl">regulamin serwisu</a>.</p>
+                        <label class="sos-check"><input type="checkbox" name="nazwa" value="wartość" autocomplete="off"
+                                                        onclick="document.getElementById('zgoda3').style.display = this.checked ? 'block' : 'none'; this.form.elements['plac3'].disabled = !this.checked">Zgadzam
+                            się.</label>
+                        <div id="zgoda3" style="display: none">
+                            <br><br>
+                            <a class="sos-pay"
+                               href="https://sklep.przelewy24.pl/zakup.php?z24_id_sprzedawcy=76363&z24_kwota=6500&z24_currency=pln&z24_nazwa=spotkanie+w+gabinecie&z24_opis=50+minut&z24_return_url=http%3A%2F%2Fgabinet-sacza.apopiel.webd.pl&z24_language=pl&k24_kraj=PL&z24_crc=5a4796d5"
+                               id="plac3" disabled="disabled">zapłać</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="sos-item">
+                    <h4>spotkanie diagnostyczne w gabinecie z użyciem testu SCID | 90 minut</h4>
+                    <h5><span class="sos-star">&#x274B;</span>110 zł</h5>
+                    <div>
+                        <button class="sos-button" id="kup4"
+                                onclick="document.getElementById('form4').style.display === 'block' ? document.getElementById('form4').style.display = 'none' : document.getElementById('form4').style.display = 'block';">
+                            zamów
+                        </button>
+                    </div>
+
+                    <div class="sos-form" id="form4" style="display: none">
+                        <p><span class="sos-star">&#x274B;</span>TAK, zgadzam się na przetwarzanie moich danych
+                            osobowych podanych w formularzu przez Gabinet Psychologiczny jako administratora danych
+                            osobowych,
+                            w celach kontaktowych oraz świadczenia na moją rzecz przez Gabinet Psychologiczny usług,
+                            zgodnie z bezwzględnie obowiązującymi przepisami prawa. Jestem świadoma/świadomy,
+                            że podanie ww. danych jest dobrowolne oraz że mam prawo dostępu do swoich danych, ich
+                            poprawiania, a także wycofania udzielonej zgody w dowolnym momencie.</p>
+                        <p><span class="sos-star">&#x274B;</span>TAK, akceptuję <a
+                                href="http://gabinet-sacza.apopiel.webd.pl">regulamin serwisu</a>.</p>
+                        <label class="sos-check"><input type="checkbox" name="nazwa" value="wartość" autocomplete="off"
+                                                        onclick="document.getElementById('zgoda4').style.display = this.checked ? 'block' : 'none'; this.form.elements['plac4'].disabled = !this.checked">Zgadzam
+                            się.</label>
+                        <div id="zgoda4" style="display: none">
+                            <br><br>
+                            <a class="sos-pay"
+                               href="https://sklep.przelewy24.pl/zakup.php?z24_id_sprzedawcy=76363&z24_kwota=11000&z24_currency=pln&z24_nazwa=spotkanie+diagnostyczne+w+gabinecie+z+u%BFyciem+testu+SCID&z24_opis=90+minut&z24_return_url=http%3A%2F%2Fgabinet-sacza.apopiel.webd.pl&z24_language=pl&k24_kraj=PL&z24_crc=5a4796d5"
+                               id="plac4" disabled="disabled">zapłać</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="sos-title">
+                testy
+            </div>
+            <div class="sos-text">
+                <div class="sos-item">
+                    <h4>test do diagnozy temperamentu FCZ-KT(R) w gabinecie | 90 minut</h4>
+                    <h5><span class="sos-star">&#x274B;</span>80 zł</h5>
+                    <div>
+                        <button class="sos-button" id="kup5"
+                                onclick="document.getElementById('form5').style.display === 'block' ? document.getElementById('form5').style.display = 'none' : document.getElementById('form5').style.display = 'block';">
+                            zamów
+                        </button>
+                    </div>
+
+                    <div class="sos-form" id="form5" style="display: none">
+                        <p><span class="sos-star">&#x274B;</span>TAK, zgadzam się na przetwarzanie moich danych
+                            osobowych podanych w formularzu przez Gabinet Psychologiczny jako administratora danych
+                            osobowych,
+                            w celach kontaktowych oraz świadczenia na moją rzecz przez Gabinet Psychologiczny usług,
+                            zgodnie z bezwzględnie obowiązującymi przepisami prawa. Jestem świadoma/świadomy,
+                            że podanie ww. danych jest dobrowolne oraz że mam prawo dostępu do swoich danych, ich
+                            poprawiania, a także wycofania udzielonej zgody w dowolnym momencie.</p>
+                        <p><span class="sos-star">&#x274B;</span>TAK, akceptuję <a
+                                href="http://gabinet-sacza.apopiel.webd.pl">regulamin serwisu</a>.</p>
+                        <label class="sos-check"><input type="checkbox" name="nazwa" value="wartość" autocomplete="off"
+                                                        onclick="document.getElementById('zgoda5').style.display = this.checked ? 'block' : 'none'; this.form.elements['plac5'].disabled = !this.checked">Zgadzam
+                            się.</label>
+                        <div id="zgoda5" style="display: none">
+                            <br><br>
+                            <a class="sos-pay"
+                               href="https://sklep.przelewy24.pl/zakup.php?z24_id_sprzedawcy=76363&z24_kwota=8000&z24_currency=pln&z24_nazwa=test+do+diagnozy+temperamentu+FCZ-KT%28R%29+w+gabinecie&z24_opis=90+minut&z24_return_url=http%3A%2F%2Fgabinet-sacza.apopiel.webd.pl&z24_language=pl&k24_kraj=PL&z24_crc=5a4796d5"
+                               id="plac5" disabled="disabled">zapłać</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sos-item">
+                    <h4>test do diagnozy osobowości NEO-PI-R w gabinecie | 50 minut</h4>
+                    <h5><span class="sos-star">&#x274B;</span>110 zł</h5>
+                    <div>
+                        <button class="sos-button" id="kup6"
+                                onclick="document.getElementById('form6').style.display === 'block' ? document.getElementById('form6').style.display = 'none' : document.getElementById('form6').style.display = 'block';">
+                            zamów
+                        </button>
+                    </div>
+
+                    <div class="sos-form" id="form6" style="display: none">
+                        <p><span class="sos-star">&#x274B;</span>TAK, zgadzam się na przetwarzanie moich danych
+                            osobowych podanych w formularzu przez Gabinet Psychologiczny jako administratora danych
+                            osobowych,
+                            w celach kontaktowych oraz świadczenia na moją rzecz przez Gabinet Psychologiczny usług,
+                            zgodnie z bezwzględnie obowiązującymi przepisami prawa. Jestem świadoma/świadomy,
+                            że podanie ww. danych jest dobrowolne oraz że mam prawo dostępu do swoich danych, ich
+                            poprawiania, a także wycofania udzielonej zgody w dowolnym momencie.</p>
+                        <p><span class="sos-star">&#x274B;</span>TAK, akceptuję <a
+                                href="http://gabinet-sacza.apopiel.webd.pl">regulamin serwisu</a>.</p>
+                        <label class="sos-check"><input type="checkbox" name="nazwa" value="wartość" autocomplete="off"
+                                                        onclick="document.getElementById('zgoda6').style.display = this.checked ? 'block' : 'none'; this.form.elements['plac6'].disabled = !this.checked">Zgadzam
+                            się.</label>
+                        <div id="zgoda6" style="display: none">
+                            <br><br>
+                            <a class="sos-pay"
+                               href="https://sklep.przelewy24.pl/zakup.php?z24_id_sprzedawcy=76363&z24_kwota=11000&z24_currency=pln&z24_nazwa=test+do+diagnozy+osobowo%B6ci+NEO-PI-R+w+gabinecie&z24_opis=50+minut&z24_return_url=http%3A%2F%2Fgabinet-sacza.apopiel.webd.pl&z24_language=pl&k24_kraj=PL&z24_crc=5a4796d5"
+                               id="plac6" disabled="disabled">zapłać</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+</div>
+
+<!-- koniec contentu -->
+
+<!-- footer -->
+
+<div class="footer">
+    <div class="footer-text">
+        <p><span style="color: #6cbf6d; margin-right: .5em">&#x274B;</span><a
+                href="http://gabinet-sacza.apopiel.webd.pl/regulamin.html">regulamin</a></p>
+        <p><span style="color: #6cbf6d; margin-right: .5em">&#x274B;</span><a
+                href="http://gabinet-sacza.apopiel.webd.pl/polityka-prywatnosci.html">polityka prywatności</a></p>
+    </div>
+</div>
+
+<!-- koniec footera -->
+
+<!-- credits -->
+
+<div class="credits">
+    <p>Mechacats Inc. © 2018</p>
+</div>
+
+<!-- koniec creditsów -->
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(":checkbox").attr("autocomplete", "off");
+    });
+</script>
+
+</body>
+</html>

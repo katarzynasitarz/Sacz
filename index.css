@@ -437,6 +437,18 @@ section .content-title {
     border-right: 3px solid #62a463;
 }
 
+section .sos-title {
+    width: 15%;
+    float: left;
+    text-align: right;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 1em;
+    font-weight: 400;
+    border-right: 3px solid #62a463;
+}
+
 .content-title img {
     width: 90%;
     height: auto;
@@ -457,12 +469,108 @@ section .content-title-right {
 
 section .content-text {
     width: 60%;
+    height: auto;
     float: right;
     text-align: left;
     font-size: 1.5em;
     letter-spacing: 1px;
     padding: 5px 1em;
     font-weight: 300;
+}
+
+section .sos-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 75%;
+    height: auto;
+    float: right;
+    }
+
+.sos-text .sos-item {
+    width: 40%;
+    height: auto;
+    text-align: left;
+    margin-right: auto;
+        }
+
+.sos-item h4 {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    padding: 5px 1em;
+    font-weight: 300;
+}
+
+.sos-item h5 {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    padding: 5px 1em;
+    font-weight: 300;
+}
+
+.sos-item .sos-star {
+    margin-right: .5em;
+    color: #62a463;
+}
+
+.sos-item .sos-button {
+    margin: 1em;
+    box-shadow: 0 4px 9px 1px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 5px;
+    background-color: #6cbf6d;
+    color:#434343;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-weight: 200;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+.sos-item .sos-button:hover {
+    background: rgba(0,0,0,0);
+    color:#6cbf6d;
+    box-shadow: inset 0 0 0 2px #6cbf6d;
+    cursor: pointer;
+}
+
+.sos-item .sos-form {
+    width: 100%;
+    height: auto;
+    margin: 1em;
+}
+
+.sos-item .sos-check {
+    margin: 1em;
+    text-transform: uppercase;
+    }
+.sos-item input {
+    margin-right: .5em;
+}
+
+.sos-item .sos-pay {
+    border: none;
+    border-radius: 5px;
+    background-color: #6cbf6d;
+    color:#434343;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-weight: 500;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+.sos-item .sos-pay:hover {
+    color:#f1f1f1;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 section .content-text-left {
@@ -552,9 +660,7 @@ section .item .nowaCena {
 
 .kontakt a {
     color: #434343;
-    font-size: 1.3em;
     letter-spacing: 1px;
-    /*padding: 1em;*/
     font-weight: 300;
     text-decoration: none;
  }
@@ -747,7 +853,7 @@ section .item .nowaCena {
 }
 
 @media screen and (max-width: 600px) {
-    section .content-title {
+    section .content-title, section .sos-title{
         width: 50%;
         font-size: 2em;
         letter-spacing: 1px;}
@@ -765,12 +871,12 @@ section .item .nowaCena {
         margin-left: auto;
     }
 
-    section .content-text {
+    section .content-text, section .sos-text {
         width: 90%;
         font-size: 1.3em;
     }
 
-    section .item {
+    section .item, .sos-text .sos-item {
         width: 100%;
         margin: 1em auto;
     }
@@ -804,6 +910,67 @@ section .item .nowaCena {
     section .item .cena {
         font-size: 1.2em;
     }
+}
+
+.privacy {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.privacy-text {
+    width: 80%;
+    border-left: 1px solid #6cbf6d;
+    padding-left: 1em;
+    }
+
+.privacy h1 {
+    background-color: #6cbf6d;
+    padding: 1em;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.privacy-text h3 {
+    font-size: 1.5em;
+    padding: 1em 1.5em;
+letter-spacing: 2px;
+}
+
+.privacy-text p {
+    font-size: 1.2em;
+    padding: .5em 1.5em;
+    letter-spacing: 2px;
+}
+
+.privacy-text a {
+    color: #62a463;
+    text-decoration: none;
+}
+
+.privacy-text a:hover, .privacy-text a:focus {
+    color: #0FA421;
+    text-decoration: underline;
+}
+
+.privacy-text ol {
+    list-style-position: inside;
+   }
+
+.privacy-text ol li {
+    font-size: 1.2em;
+    padding: .5em;
+    letter-spacing: 2px;
+}
+
+.privacy-text .lower {
+    list-style-type:  lower-latin;
+   }
+
+.privacy-text .lower li {
+    font-size: 1em;
+    padding: .5em;
+    letter-spacing: 1px;
 }
 
 .footer {
