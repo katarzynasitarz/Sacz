@@ -80,6 +80,10 @@ body {
     text-decoration: none;
 }
 
+.navbar-content .active a{
+    border-bottom: 3px solid #62a463;
+}
+
 .navbar-content .icon {
     display: none;
 }
@@ -177,20 +181,23 @@ body {
 /* header */
 
 .sponsorzy {
-    margin-top: 80px;
-    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 80px auto 1em auto;
     height: auto;
-    left: 0;
-}
+    min-height: 30px;
+    width: 40%;
+    }
 
 .sponsorzy img {
     width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 .header {
     position: relative;
-
     text-align: center;
     width: 100%;
     height: auto;
@@ -290,8 +297,7 @@ body {
 
 @media screen and (max-width: 950px) {
     .sponsorzy {
-        margin-top: 60px;
-        width: 80%;
+        width: 60%;
         height: auto;
     }
 }
@@ -359,6 +365,12 @@ body {
         margin: 0;
     }
 
+    .sponsorzy {
+        margin-top: 60px;
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 
@@ -367,7 +379,7 @@ body {
 /* content */
 
 .content {
-    width: 90%;
+    width: 100%;
     padding: 1%;
     margin: auto;
 
@@ -450,7 +462,7 @@ section .sos-title {
 }
 
 .content-title img {
-    width: 90%;
+    width: 100%;
     height: auto;
     border: 1px solid #62a463;
 }
@@ -730,7 +742,13 @@ section .item .nowaCena {
     background: rgba(0, 0, 0, 0.5);
 }
 
+.faq-content {
+    width: 80%;
+    margin: 1.5em auto;
+}
+
 .faq-item {
+    width: 80%;
     margin: .5em;
 }
 
@@ -760,13 +778,19 @@ section .item .nowaCena {
 }
 
 .answer {
-    margin: 0 .4em;
-    text-align: left;
-    font-size: 1.3em;
-    padding-left: 5px;
-    font-weight: 300;
+    margin: .4em;
     border-left: 2px solid #62a463;
 }
+
+.answer p {
+    padding: .6em;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
 
 
 @media screen and (max-width: 1135px) {
@@ -898,6 +922,11 @@ section .item .nowaCena {
         width: 100%;
         justify-content: left;
     }
+
+    .faq-content {
+        width: 90%;
+        margin: 1.5em auto;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -914,7 +943,22 @@ section .item .nowaCena {
     section .item .cena {
         font-size: 1.2em;
     }
+
+    .privacy h1 {
+        background-color: #6cbf6d;
+        padding: 1em;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .faq-content {
+        width: 100%;
+        margin: 1.5em auto;
+    }
 }
+
+
 
 .privacy {
     width: 100%;
@@ -977,23 +1021,46 @@ letter-spacing: 2px;
     letter-spacing: 1px;
 }
 
+@media screen and (max-width: 480px) {
+
+    .privacy h1 {
+        background-color: #6cbf6d;
+        padding: 1em .7em;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
 .footer {
-    display: block;
     margin: 1em 0;
     border-top: 1px solid #6cbf6d;
+    text-align: center;
+    padding-top: .5em;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 .footer .footer-text {
-    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
     margin: 1em auto;
     text-align: left;
-    font-size: 1.2em;
-    font-weight: 300;
     padding: 2px;
+    letter-spacing: normal;
 }
 
 .footer-text a {
-    font-size: 1.2em;
+    color:#434343;
+    text-decoration: none;
+    }
+
+.footer-text p {
+    font-size: 1.1em;
     color: #434343;
     font-weight: 300;
     text-decoration: none;
@@ -1005,12 +1072,41 @@ letter-spacing: 2px;
     text-decoration: none;
 }
 
+.footer .footer-links {
+    width: 45%;
+    padding: 0 1em;
+     }
+
+.footer-links .footer-links-align {
+    float: right;
+}
+
+.footer .footer-info {
+    width: 45%;
+    padding: 0 1em;
+    align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+    .footer .footer-text {width: 95%}
+    .footer .footer-links {width: 30%}
+    .footer .footer-info {width: 60%}
+    .footer .footer-text p {font-size: 1em;}
+}
+
+@media screen and (max-width: 525px) {
+    .footer {letter-spacing: normal}
+    .footer-text .footer-links,.footer-text .footer-info {width: 100%}
+    .footer .footer-links-align {float: none}
+}
+
 .credits {
     width: 100%;
-    color: #6cbf6d;
+    color: #64e966;
     padding: 1em 0;
     border-top: 3px solid #6cbf6d;
     text-align: center;
+    background-color: #757576;
 }
 
 /* Cookie warning */
