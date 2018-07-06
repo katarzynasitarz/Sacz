@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+
 <body>
+<!-- navbar -->
+
+<div class="navbar" >
+
+    <div class="logo">
+        <a class="menu" href="http://psychologiczne.sos.pl/"><img src="./img/logo.jpg"></a>
+    </div>
+
+    <div class="navbar-content"  id="myNavbar">
+
+        <a class="link menu" href="http://psychologiczne.sos.pl/#o_mnie">o mnie</a>
+        <a class="link menu" href="http://psychologiczne.sos.pl/#zakres_pomocy">zakres pomocy</a>
+        <a class="link menu" href="http://psychologiczne.sos.pl/#rodzaje_pomocy">rodzaje pomocy</a>
+        <a class="link menu" href="http://psychologiczne.sos.pl/#lgbt">LGBT+</a>
+        <a class="link menu active" href="http://psychologiczne.sos.pl/faq.html">faq</a>
+        <a class="link menu" href="http://psychologiczne.sos.pl/#cennik">cennik</a>
+        <a class="link menu" href="http://psychologiczne.sos.pl/#kontakt">kontakt</a>
+        <a class="link menu" href="http://psychologiczne.sos.pl/sos.html">zamów wizytę</a>
+    </div>
+    <div class="icon">
+        <a class="link icon" id="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+</div>
+
+<!-- koniec navbaru -->
+
+<script type="text/javascript">
+    function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar-content") {
+    x.className += " responsive";
+    } else {
+    x.className = "navbar-content";
+    }
+    }
+
+    $(".menu").click(function(){
+    $(".navbar-content").removeClass("responsive");
+    });
+
+</script>
 
 </body>
 </html>

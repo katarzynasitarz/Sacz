@@ -15,31 +15,11 @@
 
     <!-- navbar -->
 
-    <div class="navbar" >
-
-        <div class="logo">
-            <a class="menu" href="http://psychologiczne.sos.pl/"><img src="./img/logo.jpg"></a>
-        </div>
-
-        <div class="navbar-content"  id="myNavbar">
-
-            <a class="link menu" href="http://psychologiczne.sos.pl/#o_mnie">o mnie</a>
-            <a class="link menu" href="http://psychologiczne.sos.pl/#zakres_pomocy">zakres pomocy</a>
-            <a class="link menu" href="http://psychologiczne.sos.pl/#rodzaje_pomocy">rodzaje pomocy</a>
-            <a class="link menu" href="http://psychologiczne.sos.pl/#lgbt">LGBT+</a>
-            <a class="link menu" href="http://psychologiczne.sos.pl/faq.html">faq</a>
-            <a class="link menu" href="http://psychologiczne.sos.pl/#cennik">cennik</a>
-            <a class="link menu" href="http://psychologiczne.sos.pl/#kontakt">kontakt</a>
-            <a class="link menu" href="http://psychologiczne.sos.pl/sos.html">zamów wizytę</a>
-        </div>
-        <div class="icon">
-            <a class="link icon" id="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-
+    <div class="navbar" id="navbar">
+        <?php include('navbar.php'); ?>
     </div>
 
-
-    <!-- koniec navbaru -->
+    <!-- navbar koniec -->
 
     <!-- content -->
 
@@ -163,25 +143,29 @@
 
     <!-- footer -->
 
-    <div class="footer">
-        <div class="footer-text">
-            <p><span style="color: #6cbf6d; margin-right: .5em">&#x274B;</span><a href="http://psychologiczne.sos.pl/regulamin.html">regulamin</a></p>
-            <p><span style="color: #6cbf6d; margin-right: .5em">&#x274B;</span><a href="http://psychologiczne.sos.pl/polityka-prywatnosci.html">polityka prywatności</a></p>
-        </div>
+    <div class="footer" id="footer">
+        <?php include('footer.php'); ?>
     </div>
 
     <!-- koniec footera -->
 
     <!-- credits -->
 
-    <div class="credits">
-        <p>Mechacats Inc. © 2018</p>
+    <div class="credits" id="credits">
+        <?php include('credits.php'); ?>
     </div>
 
     <!-- koniec creditsów -->
 
 </div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121863511-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-121863511-1');
+</script>
 <script src="navbar.js"></script>
 
 </body>
