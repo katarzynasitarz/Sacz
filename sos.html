@@ -28,11 +28,29 @@
 
     <!-- navbar -->
 
-    <div class="navbar" id="navbar">
-        <?php include('navbar.php'); ?>
+    <div class="navbar">
+
+        <div class="logo">
+            <a class="menu" href="http://psychologiczne.sos.pl/"><img src="./img/logo.jpg"></a>
+        </div>
+        <div class="navbar-content" id="myNavbar">
+
+            <a class="link menu" href="http://psychologiczne.sos.pl/#o_mnie">o mnie</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#zakres_pomocy">zakres pomocy</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#rodzaje_pomocy">rodzaje pomocy</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#lgbt">LGBT+</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/faq.html">faq</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#cennik">cennik</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#kontakt">kontakt</a>
+            <a class="link menu active" href="http://psychologiczne.sos.pl/sos.html">zamów wizytę</a>
+        </div>
+        <div class="icon">
+            <a class="link icon" id="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
     </div>
 
-    <!-- navbar koniec -->
+    <!-- koniec navbaru -->
 
     <!-- content -->
 
@@ -43,13 +61,21 @@
         </div>
 
         <section>
+
+            <div style="width: 75%; text-align: center;">
+<h3>Po zakupieniu spotkania proszę o telefon w celu wybrania dogodnego terminu lub o wysłanie sms z podaniem preferowanych dni i godzin.</h3>
+<h3 style="color: #6cbf6d; font-size: x-large; font-weight: bold;">690 060 950</h3>
+<h3>Jeśli nie będę mogła odebrać, oddzwonię do Pani/Pana/Państwa najszybciej jak to możliwe.</h3>
+</div>
+</section>
+<section>
+
             <div class="sos-title">
-                <div><h2>online</h2></div>
-                <div><img src="./img/logo-online.jpg"></div>
+                online
             </div>
             <div class="sos-text">
                 <div class="sos-item">
-                    <img src="./img/kwiatek-online.jpg"><h4>spotkanie online | 50 minut</h4><br>
+                    <h4>spotkanie online | 50 minut</h4><br>
                     <h5><span class="sos-star">&#x274B;</span>45 zł</h5>
                     <div>
                         <button class="sos-button" id="kup1"
@@ -82,7 +108,7 @@
 
                 </div>
                 <div class="sos-item">
-                    <img src="./img/kwiatek-online.jpg"><h4>spotkanie diagnostyczne online z użyciem testu SCID | 90 minut</h4>
+                    <h4>spotkanie diagnostyczne online z użyciem testu SCID | 90 minut</h4>
                     <h5><span class="sos-star">&#x274B;</span>80 zł</h5>
                     <div>
                         <button class="sos-button" id="kup2"
@@ -119,8 +145,7 @@
 
         <section>
             <div class="sos-title">
-                <div><h2>gabinet</h2></div>
-                <div><img src="./img/logo-offline.jpg"></div>
+                gabinet
             </div>
             <div class="sos-text">
                 <div class="sos-item">
@@ -197,8 +222,7 @@
 
         <section>
             <div class="sos-title">
-                <div><h2>testy</h2></div>
-                <div><img src="./img/logo-testy.jpg"></div>
+                testy
             </div>
             <div class="sos-text">
                 <div class="sos-item">
@@ -276,21 +300,38 @@
 
 <!-- koniec contentu -->
 
+
     <!-- footer -->
 
-    <div class="footer" id="footer">
-        <?php include('footer.php'); ?>
+    <div class="footer">
+        <p>PSYCHOLOGICZNE S.O.S. Aleksandra Kraszczyńska</p>
+        <div class="footer-text">
+
+            <div class="footer-links">
+                <div class="footer-links-align">
+                    <p><span style="color: #6cbf6d; margin-right: .5em">&#x274B;</span><a href="http://psychologiczne.sos.pl/regulamin.html">regulamin</a></p>
+                    <p><span style="color: #6cbf6d; margin-right: .5em">&#x274B;</span><a href="http://psychologiczne.sos.pl//polityka-prywatnosci.html">polityka prywatności</a></p>
+                </div>
+            </div>
+            <div class="footer-info">
+
+                <p><span style="color: #6cbf6d; margin-right: .5em"><i class="fas fa-phone"></i></span><a>690 060 950</a><span style="color: white; margin-right: .5em">&#x274B;</span></p>
+                <p><span style="color: #6cbf6d; margin-right: .5em"><i class="fas fa-envelope"></i></span><a href="mailto:kontakt@psychologiczne.sos.pl">kontakt@psychologiczne.sos.pl</a><span style="color: white; margin-right: .5em">&#x274B;</span></p>
+
+            </div>
+        </div>
     </div>
 
-<!-- koniec footera -->
+    <!-- koniec footera -->
 
-<!-- credits -->
+    <!-- credits -->
 
-    <div class="credits" id="credits">
-        <?php include('credits.php'); ?>
+    <div class="credits">
+        <p>Gabinet Psychologiczny Aleksandra Kraszczyńska © 2018</p>
+        <p>Created by Mechacats Inc.</p>
     </div>
 
-<!-- koniec creditsów -->
+    <!-- koniec creditsów -->
 
 </div>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121863511-1"></script>
