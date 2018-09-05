@@ -24,9 +24,26 @@
 <div class="container">
 
     <!-- navbar -->
+  <div class="navbar">
 
-    <div class="navbar" id="navbar">
-        <?php include('navbar.php'); ?>
+        <div class="logo">
+            <a class="menu" href="http://psychologiczne.sos.pl/"><img src="./img/logo.jpg"></a>
+        </div>
+        <div class="navbar-content" id="myNavbar">
+
+            <a class="link menu" href="http://psychologiczne.sos.pl/#o_mnie">o mnie</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#zakres_pomocy">zakres pomocy</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#rodzaje_pomocy">rodzaje pomocy</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#lgbt">LGBT+</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/faq.html">faq</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#cennik">cennik</a>
+            <a class="link menu" href="http://psychologiczne.sos.pl/#kontakt">kontakt</a>
+            <a class="link menu active" href="http://psychologiczne.sos.pl/sos.html">zamów wizytę</a>
+        </div>
+        <div class="icon">
+            <a class="link icon" id="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
     </div>
 
     <!-- navbar koniec -->
@@ -50,7 +67,7 @@
             <h1>GABINET PSYCHOLOGICZNY</h1>
             <img src="./img/logo-male.png">
             <h2>Aleksandra Kraszczyńska</h2>
-            <a href="#kontakt"><button class="btn">znajdź mnie</button></a>
+            <a href="#cennik"><button class="btn">PROMOCJA</button></a>
 </div>
         <div  id="o_mnie"></div>
     </div>
@@ -95,8 +112,9 @@
             <div class="content-text">
                 <p>Diagnoza zaburzeń nastroju, zaburzeń psychotycznych, zaburzeń związanych z zażywaniem substancji,
                     zaburzeń lękowych i somatoformicznych, zaburzeń odżywiania i zaburzeń przystosowania, również przy pomocy ustrukturalizowanego wywiadu SCID. </p>
-                <p>Poradnictwo i pomoc psychologiczna w przypadkach uzależnień, zaburzeń nastroju, lękowych, przystosowania, osobowości, psychotycznych, w sytuacjach kryzysowych.
-                    Jeśli nie jest/są Pani/Pan/Państwo pewni czy problem „kwalifikuje się” do zajęcia się nim proszę przeczytać dział <a href="http://psychologiczne.sos.pl/faq.html">FAQ</a>.</p>
+                <p>Poradnictwo i pomoc psychologiczna w przypadkach uzależnień, zaburzeń nastroju, lękowych, przystosowania, osobowości, psychotycznych, doświadczania przemocy, w sytuacjach kryzysowych.
+                    Jeśli nie jest/są Pani/Pan/Państwo pewni czy problem „kwalifikuje się” do zajęcia się nim,
+                    zachęcam do przeczytania działu <a href="http://psychologiczne.sos.pl/faq.html">FAQ</a>.</p>
                 <p>Treningi relaksacyjne, radzenia sobie ze stresem,  desensytyzacja przy fobiach, wspomaganie rozwoju osobistego, zawodowego i edukacyjnego.</p>
                 <p>Diagnoza temperamentu opisująca formalne aspekty zachowania (żwawość, perseweratywność, wrażliwość sensoryczną, reaktywność emocjonalną, wytrzymałość,
                     aktywność i rytmiczność) za pomocą testu FCZ-TK(R), oraz  diagnoza cech osobowości
@@ -108,21 +126,23 @@
         <section>
 
             <div class="content-text-left">
-                <p>Pomoc psychologiczna w gabinecie – przyjmuję w dwóch miejscach w Warszawie, na Woli oraz na Mokotowie.</p>
-                <p>Pomoc psychologiczna online – odbywają się przez Skype lub Hangout.</p>
+                <p>Pomoc psychologiczna w gabinecie – przyjmuję w dwóch miejscach w Warszawie - na Woli oraz na Mokotowie.</p>
+                <p>Pomoc psychologiczna online – odbywa się przez Skype lub Hangout.</p>
                 <p>Pomoc psychologiczna z dojazdem do klienta/klientki – w Warszawie, Piasecznie, Tarczynie, Nadarzynie i okolicach.</p>
-                <p>Jeśli chce/chcecie Pani/Pan/Państwo dowiedzieć się więcej na temat przebiegu spotkań proszę przeczytać dział <a href="http://psychologiczne.sos.pl/faq.html">FAQ</a>.</p>
-                <p>Jeśli chce/chcecie Pani/Pan/Państwo wykupić spotkanie osobiste lub online zapraszam do <a href="">sklepu</a>.</p>
+                <p>Jeśli chce/chcecie Pani/Pan/Państwo dowiedzieć się więcej na temat przebiegu spotkań,
+                 zapraszam do zapoznania się z działem <a href="http://psychologiczne.sos.pl/faq.html">FAQ</a>.</p>
+                <p>Jeśli chce/chcecie Pani/Pan/Państwo wykupić spotkanie osobiste lub online, zapraszam do <a href="">sklepu</a>.</p>
                 <p>Pomoc psychologiczna online ma wiele zalet dla klientek/klientów:</p>
                 <p><span class="star">&#x274B;</span>jest tańsza;</p>
                 <p><span class="star">&#x274B;</span>zajmuje mniej czasu ponieważ nie trzeba go poświęcać na dojazdy do gabinetu;</p>
-                <p><span class="star">&#x274B;</span>ułatwia dostęp do pomocy psychologicznej osobom, które nie mogą (np. z powodu niepełnosprawności)
+                <p><span class="star">&#x274B;</span>ułatwia dostęp do pomocy psychologicznej osobom, które nie mogą (np. z powodu niepełnosprawności, sprawowania opieki nad osobą chorą)
                     lub nie chcą (np. z powodu agorafobii czy fobii społecznej) wyjść z domu;</p>
                 <p><span class="star">&#x274B;</span>nie ogranicza wyboru psychologa/psycholożki do najbliższej okolicy,
-                    daje większą możliwość wyboru specjalistki/specjalisty  i skorzystania z usług osobom z dowolnego zakątka kraju,
-                    w tym osobom zamieszkałym na wsi i w mniejszych miasteczkach, a także osobom przebywającym poza granicami kraju,
+                    daje większą możliwość wyboru specjalistki/specjalisty i skorzystania z usług osobom z dowolnego zakątka kraju,
+                    na przykład zamieszkałym na wsi i w mniejszych miasteczkach;</p>
+                 <p><span class="star">&#x274B;</span>daje dostęp do pomocy osobom przebywającym poza granicami kraju,
                     które nie mają dostępu do psychologa mówiącego po polsku lub nie znają języka obcego w stopniu pozwalającym na odbycie wizyty;</p>
-                <p><span class="star">&#x274B;</span>osoby, które często podróżują w sprawach służbowych nie muszą rezygnować z regularnych spotkań.</p>
+                <p><span class="star">&#x274B;</span>osoby, które często podróżują w sprawach służbowych, nie muszą rezygnować z regularnych spotkań.</p>
             </div>
             <div class="content-title-right">
                 rodzaje pomocy
@@ -135,14 +155,13 @@
             </div>
             <div class="content-text">
                 <p>Serdecznie zapraszam również wszystkie osoby nieheteroseksualne, niebinarne i niecispłciowe oraz osoby im bliskie.
-                    Świat się zmienia, Polska się zmienia i idzie ku lepszemu, ale nadal nie jest idealnie.
                     Homofobia, bifobia, czy transfobia, odrzucenie, czasem konieczność ukrywania się, to wszystko sprawia, że osoby z populacji
                     LGBT+ są bardzo narażone na występowanie zaburzeń depresyjnych, lękowych, autoagresji, często podejmują próby samobójcze
                     (aż 30% wśród osób transpłciowych!).</p>
                 <p>Jestem osobą, która rozumie z czym Pani/Pan/Państwo się boryka/borykają, jakie napotyka/napotykają problemy.
-                    Zdecydowanie NIE uznaję nieheteroseksualności za chorobę, transpłciowości za zaburzenie (od 18.06.2018 Światowa Organizacja Zdrowa również <3)
+                    Zdecydowanie NIE uważam nieheteroseksualności za chorobę, transpłciowości za zaburzenie (od 18.06.2018 Światowa Organizacja Zdrowa również)
                     i nie „leczę” orientacji i tożsamości,
-                    a wręcz przeciwnie, staram się pomóc żyć szczęśliwie takim jakim się jest w tym nie zawsze przyjaznym świecie.</p>
+                    a wręcz przeciwnie - staram się pomóc żyć szczęśliwie takim, jakim się jest w tym nie zawsze przyjaznym świecie.</p>
             </div>
         </section>
 
@@ -156,6 +175,8 @@
     <div class="content">
 
         <section>
+
+            <h3 style="font-size: 2.4em; font-weight: 600; margin-bottom: 1em; color: #6cbf6d; border-bottom: 2px solid;">promocyjne ceny tylko do 15.09.2018</h3>
 
             <div class="item">
                  <span class="rodzaj">spotkanie online | 50 min</span>
@@ -203,9 +224,9 @@
             </div>
         </section>
 
-        <h3 style="font-size: 1.4em; font-weight: 300; margin-bottom: 1em;">Omówienie opracowanych testów następuje w czasie kolejnego spotkania, trwającego 50 minut. Istnieje możliwość wystawienia pisemnej diagnozy/opinii.</h3>
+        <h3 style="font-size: 1.4em; font-weight: 300; margin: 1em;">Omówienie opracowanych testów następuje w czasie kolejnego spotkania, trwającego 50 minut. Istnieje możliwość wystawienia pisemnej diagnozy/opinii.</h3>
 
-        <h3 style="color: #6cbf6d;">&#x274B; powyższe ceny są ofertą promocyjną ograniczoną czasowo</h3>
+        <h3 style="color: #6cbf6d; margin: 1em;">&#x274B; powyższe ceny są ofertą promocyjną ograniczoną czasowo</h3>
 
     </div>
 
@@ -307,16 +328,32 @@
 
     <!-- footer -->
 
-    <div class="footer" id="footer">
-        <?php include('footer.php'); ?>
+    <div class="footer">
+        <p>PSYCHOLOGICZNE S.O.S. Aleksandra Kraszczyńska</p>
+        <div class="footer-text">
+
+            <div class="footer-links">
+                <div class="footer-links-align">
+                    <p><span style="color: #6cbf6d; margin-right: .5em">&#x274B;</span><a href="http://psychologiczne.sos.pl/regulamin.html">regulamin</a></p>
+                    <p><span style="color: #6cbf6d; margin-right: .5em">&#x274B;</span><a href="http://psychologiczne.sos.pl//polityka-prywatnosci.html">polityka prywatności</a></p>
+                </div>
+            </div>
+            <div class="footer-info">
+
+                <p><span style="color: #6cbf6d; margin-right: .5em"><i class="fas fa-phone"></i></span><a>690 060 950</a><span style="color: white; margin-right: .5em">&#x274B;</span></p>
+                <p><span style="color: #6cbf6d; margin-right: .5em"><i class="fas fa-envelope"></i></span><a href="mailto:kontakt@psychologiczne.sos.pl">kontakt@psychologiczne.sos.pl</a><span style="color: white; margin-right: .5em">&#x274B;</span></p>
+
+            </div>
+        </div>
     </div>
 
     <!-- koniec footera -->
 
     <!-- credits -->
 
-    <div class="credits" id="credits">
-        <?php include('credits.php'); ?>
+    <div class="credits">
+        <p>Gabinet Psychologiczny Aleksandra Kraszczyńska © 2018</p>
+        <p>Created by Mechacats Inc.</p>
     </div>
 
     <!-- koniec creditsów -->
